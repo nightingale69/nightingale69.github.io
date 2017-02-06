@@ -31,7 +31,7 @@ div {
 	margin: 0 auto;
 	margin-top: -13.6%;
     max-width: 100%;
-    min-width: 100%;
+    min-width: 100px;
 	height: auto;
     font-family: Arial;
 	font-size: 45%;
