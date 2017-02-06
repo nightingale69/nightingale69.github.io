@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 681px) {
+
+@keyframes shutter /* Девушка */ {
+	0% {
+		transform: translate(-50%, 0.2%);
+	}
+
+	100% {
+		transform: translate(-0.1%, 0.2%)
+	}
+}
+
+
+@keyframes gallery /* Галерея */ {
+	0% {
+		transform: translate(-50%, -0.3%) scale(1, 0.99);
+	}
+
+	100% {
+		transform: translate(0%, -0.3%) scale(1, 0.99);
+	}
+}
+
+
+@keyframes chipsan /* Пачка с чипсами */{
+	from{
+		-webkit-transform: translate(-50%, 3%) scale(1.11);
+		transform: translate(-50%, 3%) scale(1.11);
+		}
+
+	to{
+		-webkit-transform: translate(1.1%, 3%) scale(1.11);
+		transform: translate(1.1%, 3%) scale(1.11);
+		}
+}
+
+
+.chipsan /* Пачка с чипсами */{ 
+	-webkit-animation-name: chipsan;
+	animation-name: chipsan;
+	animation-fill-mode: forwards;
+	}
+
+
+@keyframes baloon /* Шар */{
+	from{
+		-webkit-transform: translate(50%, 2.7%) scaleY(1.1);
+		transform: translate(50%, 2.7) scaleY(1.1);
+		}
+
+	to{	
+		-webkit-transform:translate(-0.1%, 2.7%) scaleY(1.1);
+		transform:translate(-0.1%, 2.7%) scaleY(1.1);
+		}
+}
+
+.baloon /* Шар */{
+	-webkit-animation-name: baloon;
+	animation-name: baloon;
+	animation-fill-mode: forwards;
+	}
+	
+	
+
+@keyframes beach /* Пляж */{
+	from{
+		-webkit-transform: translate(-50%, 0%) scale(1.01, 1.011);
+		transform: translate(-50%, 0%) scale(1.01, 1.011);
+		}
+
+	to{	
+		-webkit-transform: translate(-0.5%, 0%) scale(1.01, 1.011);
+		transform: translate(-0.5%, 0%) scale(1.01, 1.011);
+		}
+}
+
+.beach /* Пляж */{
+	-webkit-animation-name: beach;
+	animation-name: beach;
+	animation-fill-mode: forwards;}
+	
+	
+@keyframes map /* Карта */{
+	from{
+		-webkit-transform: translate(50%, 3%) scale(1.071, 1.07);
+		transform: translate(50%, 3%) scale(1.071, 1.07);
+		}
+
+	to{	
+		-webkit-transform: translate(-23%, 3%) scale(1.071, 1.07);
+		transform: translate(-3.7%, 3%) scale(1.071, 1.07);
+		}
+}
+
+.map /* Карта */{
+	-webkit-animation-name: map;
+	animation-name: map;
+	animation-fill-mode: forwards;}
+	
+}

@@ -1,0 +1,647 @@
+@charset "utf-8";
+
+
+@keyframes banner /* Баннер */{
+	0% {
+		transform: translateX(200px);
+	}
+
+	100% {
+		transform: translateX(0px)
+	}
+}
+
+
+@media screen and (min-width: 1560px)  {
+
+html, body, div, p, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background: #fff center top;
+    position: relative;
+}
+
+div {
+	display: block;}
+
+#wrapper {
+	margin: 0 auto;
+    max-width: 5000px;
+    min-width: 1560px;
+	height: auto;
+    background-color: #fff;
+    font-family: Arial;
+	box-shadow: 0 0 10px 5px;
+	overflow: hidden;
+}
+
+
+/* Левый сайдбар */
+
+.leftbox {
+	position: fixed;
+	height: 100%;
+    width: 9.6%;
+    float: left;
+    z-index: 10;
+	background-color: white;
+}
+
+
+/* Логотип */
+
+.logotip {
+    display: block;
+    background: url(images/LOGO.png) no-repeat center 86%;
+	background-size: 6vmax;
+    height: 7.13vmax;
+    margin: 0 auto;
+}
+
+.slogan {
+    padding-bottom: 5%;
+    background: url(images/slogan.png) no-repeat center 29%;
+	background-size: 60%;
+    height: 3vmax;
+    margin: 0 auto;
+}
+
+/* Меню */
+
+
+.menu {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9vmax;
+    line-height: 0px;
+    text-align: center;
+}
+
+.menu__item {
+    display: block;
+    padding: 63% 4% 0 0;
+    height: 3.1vmax;
+    color: grey;
+    text-decoration: none;
+}
+
+.menu__insta {
+    background: url(images/insta.png) no-repeat 49% 59%;
+    background-size: 30%;
+}
+
+.menu__word1 {
+	margin-top: 16%;
+	font-size: 0.9vmax;
+}
+
+.menu__project {
+    background: url(images/prize.png) no-repeat 50% 31%;
+    background-size: 31%;
+}
+
+.menu__word2 {
+	margin-top: 2%;
+	font-size: 0.9vmax;
+}
+
+.menu__action {
+    background: url(images/map.png) no-repeat 48% 17%;
+    background-size: 32%;
+
+}
+
+.menu__word3 {
+	margin-top: -13%;
+	font-size: 0.9vmax;}
+
+/* Содержание */
+
+.rightbox {
+    margin-left: 9.7%;
+    background: #f4da33 left top;
+	height: 100%;
+	z-index: 9;
+}
+
+.cont {
+	background-color: #f4da33 }
+	
+.cont__link {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Велик */
+.cont__banner {
+    position: relative;
+	animation-name: banner;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.cont__banner1 {
+    width: 100%;
+    float: left; 
+}
+
+.cont__banner .cont__link p {
+	padding-top: 17%;
+    text-align: center;
+    font-size: 1.15vmax;
+    color: #7D7D7D;
+    letter-spacing: 0.07em;
+    line-height: 1.3;
+	}
+	
+.cont__bannerphon {
+	z-index: 10;
+}
+	
+.cont__bannerphon2, 
+.cont__bannerphon3,
+.cont__bannerlogo,
+.cont__bannerslog,
+.cont__bannermenu {display: none;}
+
+.cont__bannercam {
+    z-index: 2;
+    position: absolute;
+    left: 9.4%;
+    top: 15.8%;
+    width: 4.2%;
+}
+
+.cont__bannerellipse1 {
+    z-index: 1;
+    position: absolute;
+	left: 7.1%;
+    top: 11.2%;
+    width: 8.9%;
+}
+
+.cont__img__te1 {
+    z-index: 4;
+    position: absolute;
+    left: 6.3%;
+    top: 29.5%;
+}
+
+.cont__bannerheart {
+    z-index: 2;
+    position: absolute;
+    left: 22.4%;
+    top: 16.8%;
+    width: 4.8%;
+}
+
+.cont__bannerellipse2 {
+    z-index: 1;
+    position: absolute;
+    left: 20.3%;
+    top: 11.2%;
+    width: 8.9%;
+}
+
+.cont__img__te2 {
+    z-index: 4;
+    position: absolute;
+    left: 21.7%;
+    top: 31.2%;
+}
+
+.cont__bannerprize {
+    z-index: 2;
+    position: absolute;
+    left: 35.8%;
+    top: 15%;
+    width: 4.4%;	
+}
+
+.cont__bannerellipse3 {
+    z-index: 1;
+    position: absolute;
+    left: 33.5%;
+    top: 11%;
+    width: 8.9%;
+}
+
+.cont__img__te3 {
+    z-index: 4;
+    position: absolute;
+    left: 34.3%;
+    top: 29.8%;
+}
+
+.cont__bannerslogan {
+    z-index: 1;
+    position: absolute;
+    left: 5.6%;
+    top: 54.6%;
+    width: 21.1%;
+}
+.cont__banner img {
+    display: block;
+    width: 100%;
+}
+
+/* Общее для блоков */
+
+.cont__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.cont__img img {
+    display: block;
+    width: 100%;
+}
+
+/* Девушка */
+.cont__img1 {
+    width: 50%;
+    float: left;
+	transform: translate(-4px, 4px) scale(1.01);
+	z-index: 9;
+	animation-name: shutter;
+	animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.cont__imgshutmob {display: none;}
+
+.cont__img__vk {
+    z-index: 1;
+    position: absolute;
+    left: 22.2%;
+    top: 4.6%;
+    width: 20%;
+}
+
+.cont__img__tp {
+    z-index: 1;
+    position: absolute;
+    left: 31.6%;
+    top: 18.7%;
+    width: 17.6%;
+}
+
+.cont__img__ar1 {
+    z-index: 1;
+    position: absolute;
+    left: 24.7%;
+    top: 28.9%;
+    width: 6.7%;
+}
+
+.cont__img__ar2 {
+    z-index: 1;
+    position: absolute;
+    left: 27.6%;
+    top: 29%;
+    width: 0.8%;
+}
+
+.cont__img__prizyv {
+    z-index: 1;
+    position: absolute;
+    left: 14.2%;
+    top: 38.6%;
+}
+
+.cont__img__agal {
+    z-index: 1;
+    position: absolute;
+    left: 12.9%;
+    top: 77.4%;
+    width: 35.1%;
+}
+
+.cont__img__gal {
+	position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vmax;
+    color: white;
+    letter-spacing: 0.13em;
+    top: 32%;
+    left: 24%;
+}
+
+.cont__img__prizyv p {
+	font-size: 2.9vmax;
+    align-content: center;
+    font-weight: bold;
+    line-height: 1.28;
+	}
+
+.cont__img__prizyv span {
+	font-weight: normal;
+	border: 3px solid white;
+    border-right: 15px solid white;
+    border-left: 3px solid white;
+    background-color: white;
+	}
+
+/* Галерея */
+.cont__img2 {
+	z-index: 8;
+    width: 50%;
+    margin-left: 50%;
+	background-color: white;
+	transform: translate(3px, 7px) scale(0.93, 0.93);
+	margin-bottom: 10px;
+	animation-name: gallery;
+	animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.cont__img__foto {
+    z-index: 9;
+    position: absolute;
+    left: 4%;
+    top: 4.7%;
+    width: 92.5%;
+    /*transform: scale(1.123, 1.139);*/
+
+}
+
+/* Пачка */
+.cont__img3 {
+    width: 50%;
+    float: left;
+	z-index: 7;
+}
+
+.cont__imgrqmob {display: none;}
+
+.cont__img__chips {
+    z-index: 1;
+    position: absolute;
+    left: 10.3%;
+    top: 14.9%;
+    transform: scale(1, 1);
+    width: 34.6%;
+}
+
+.cont__img__win {
+    z-index: 1;
+    position: absolute;
+    left: 46%;
+    top: 23.3%;
+}
+
+.cont__img__win p {
+	font-size: 3.3vmax;
+    align-content: center;
+    color: #FBFBFB;
+    font-weight: bold;
+    line-height: 1.12;
+    letter-spacing: 3px;
+}
+
+.cont__img__text {
+    z-index: 1;
+    position: absolute;
+    left: 15.6%;
+    top: 60.8%;
+    width: 71%;
+}
+
+.cont__img__text p {
+	font-size: 1.12vmax;
+    align-content: center;
+    color: #FBFBFB;
+    line-height: 1.39;
+    letter-spacing: 0.057em;
+}
+
+.cont__img__about {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 32%;
+    left: 15.4%;
+    top: 74.3%;
+}
+
+.cont__img__proj {
+	position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.38vmax;
+    color: white;
+    letter-spacing: 0.12em;
+    top: 30%;
+    left: 17%;
+}
+
+/* Шар */
+.cont__img4 {
+    width: 50%;
+    margin-left: 50%;
+	z-index: 6;
+	transition: all 4s ease-in-out;
+}
+
+.cont__imgxpmob {
+	display: none;}
+
+.cont__img__baloon {
+    z-index: 1;
+    position: absolute;
+    left: 32.8%;
+    top: 17.1%;
+	width: 35%;
+    transform: scale(1.1, 1.05);
+}
+
+cont__img img {
+	overflow: hidden;}
+
+.cont__img4:hover {
+	-webkit-transform: scale(1.15, 1.17); 
+	-moz-transform: scale(1.15, 1.17); 
+	-o-transform: scale(1.15, 1.17);
+	-ms-transform: scale(1.15, 1.17);
+	transform: scale(1.15, 1.17);
+}
+
+/* Пляж */
+.cont__img5 {
+    width: 50%;
+    float: left;
+	z-index: 8;
+	transition: all 4s ease-in-out;
+	transform: translate(-4px, 15px) scale(1.01, 1.012);
+}
+
+.cont__imgbmob {display: none;}
+
+.cont__img5 img {
+	overflow: hidden;
+	}
+
+.cont__img5:hover {
+	transform: translate(-4px, 15px) scale(1.03);
+	z-index: 3;
+}
+
+/* Карта */
+.cont__img6 {
+    width: 50%;
+    margin-left: 50%;
+	z-index: 8;
+}
+
+.cont__imgmapmob {display: none;}
+
+.cont__img__mapgps {
+    z-index: 1;
+    position: absolute;
+    left: 11%;
+    top: 28.7%;
+    width: 84%;
+}
+
+.cont__img__met {
+	z-index: 1;
+    position: absolute;
+    left: 44.3%;
+    top: 9.9%;
+    width: 20%;
+}
+
+.cont__img__copy {
+    z-index: 1;
+    position: absolute;
+    left: 47.1%;
+    top: 14.2%;
+    width: 14.5%;
+}
+
+.cont__img__text2 {
+    z-index: 1;
+    position: absolute;
+    left: 26%;
+    top: 64.9%;
+}
+
+.cont__img__text2 p {
+	font-size: 3.96vmax;
+    align-content: center;
+    color: #000000;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+}
+
+.cont__img__transition {
+    z-index: 1;
+    position: absolute;
+    left: 37.1%;
+    top: 81.2%;
+    width: 33%;
+}
+
+.cont__img__per {
+	position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.37vmax;
+    color: white;
+    letter-spacing: 0.14em;
+    top: 32%;
+    left: 24.2%;
+}
+
+/* Футер */
+.footer {
+	font-family: Arial, sans-serif;
+    color: #fff;
+    padding-left: 9.7%;
+	margin-top: 2.7%;
+	z-index: 10;
+}
+
+.footer__socials {
+    float: right;
+    width: 25.3vmax;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__social {
+    float: left;
+    width: 6.31vmax;
+    height: 6.25vmax;
+    display: block;
+    background-size: cover;
+    background-image: url(images/footer1560.png);
+}
+
+.footer__social--fb {background-position: -266.5% 0;}
+
+.footer__social--vk {background-position: -234.2% 0;}
+
+.footer__social--mail {background-position: -67.5% 0;}
+
+.footer__social--yt {background-position: -34% 0;}
+
+.footer__block1 {
+    background-color: #3c3c3c;
+    padding: 1.1% 0 0 1.8%;
+    height: 5.4vmax;
+}
+
+.footer__block2 {
+    font-size: 0.81vmax;
+    color: grey;
+    letter-spacing: 0.03em;
+    margin-top: -2.9%;
+    margin-left: 6.1%;
+}
+
+.footer__block__logo {
+	width: 4.9%; 
+	margin-top: 0.4%; 
+	margin-left: 0.5%;
+}
+
+.footer__blockmob {
+	display: none
+}
+
+.footer__block {
+    font-size: 13px;
+    line-height: 16px;
+    padding: -20px 0 0 4%;
+    height: 60px;
+    width: 20%;
+    float: left;
+	color: red;
+	transform: translate(20px,);
+}
+
+
+}
+
+
